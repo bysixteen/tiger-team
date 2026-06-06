@@ -1,21 +1,21 @@
 ---
-title: "Project Squad — Specialist Roles"
+title: "Tiger Team — Specialist Roles"
 version: "1.0"
 type: specialist-roster
 status: optional
 ---
 
-# Project Squad — Specialist Roles
+# Tiger Team — Specialist Roles
 
 This file defines optional specialist roles that can be added to a sprint or spike when the challenge requires domain-specific expertise beyond the core nine personas.
 
-**Important:** This file is additive. The nine core personas in `project-squad.md` are the portable constant and must never be modified. Specialists are pulled in for specific sprints only — they do not replace any core persona.
+**Important:** This file is additive. The nine core personas in `personas.md` are the portable constant and must never be modified. Specialists are pulled in for specific sprints only — they do not replace any core persona.
 
 ---
 
 ## How to Use Specialists
 
-When running `/create-sprint`, `/create-workshop`, or `/create-spike`, you can add a specialist to the team selection step by naming them. The command will include their perspective in the Sketch, Perspectives, or Investigation phase alongside the core personas.
+When running the sprint, workshop, or spike skill, you can add a specialist to the team selection step by naming them. The command will include their perspective in the Sketch, Perspectives, or Investigation phase alongside the core personas.
 
 Specialists should be used sparingly. If you find yourself adding a specialist to every sprint, consider whether their perspective should be absorbed into one of the core personas instead.
 

@@ -1,0 +1,20 @@
+{
+  "skill_name": "spike",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Before we commit to the offline-first architecture, can you investigate whether our sync requirements are actually feasible with the current backend?",
+      "expected_output": "Runs the qualification test (No/Yes/Yes), formulates one specific question via the Question Formulation Framework, assigns technical personas (Lena, Marcus, Kira), produces brief.md and answer-first output.md with confidence level, valid summary.json, raw research below the --- rule."
+    },
+    {
+      "id": 2,
+      "prompt": "Spike: which charting library should we use, and also how should we handle CSV export, and what about print styles?",
+      "expected_output": "Flags multiple questions and splits them — one question per spike — rather than running one sprawling investigation."
+    },
+    {
+      "id": 3,
+      "prompt": "I want to spike adding a dark mode toggle to the settings page. I know roughly how long it'll take.",
+      "expected_output": "Qualification test catches that the effort is estimable and the goal is a feature, not knowledge — recommends a regular task instead of a spike, while letting the user override."
+    }
+  ]
+}

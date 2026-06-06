@@ -1,0 +1,15 @@
+{
+  "skill_name": "import-personas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have six validated personas from the client's research deck — here they are pasted as a table. Import them so the team uses them.",
+      "expected_output": "Normalises each persona into the standard format with source and import date; marks missing fields as not-provided rather than inventing; presents back for confirmation BEFORE writing; merges into research/PERSONAS.md without overwriting existing content; asks which are primary."
+    },
+    {
+      "id": 2,
+      "prompt": "Import personas from research/raw-personas-export.md",
+      "expected_output": "Reads the referenced file, extracts and normalises, confirms with the user, writes with a source header, and updates sprint-backlog.md candidates that the new personas inform."
+    }
+  ]
+}

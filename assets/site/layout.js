@@ -66,7 +66,7 @@
 
   var version = document.createElement('div');
   version.className = 'version';
-  version.textContent = '__PACKAGE_VERSION__';
+  version.textContent = 'v2.0.0';
 
   header.appendChild(logoLink);
   header.appendChild(version);

@@ -1,0 +1,30 @@
+{
+  "skill_name": "status",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/status",
+      "expected_output": "Displays a formatted dashboard showing sprint history, backlog, dissent register, and decisions. Handles missing files gracefully with clear messaging rather than errors."
+    },
+    {
+      "id": 2,
+      "prompt": "/status backlog",
+      "expected_output": "Shows only the sprint backlog section. Focuses output. Does not show dissent or decisions."
+    },
+    {
+      "id": 3,
+      "prompt": "/status dissent",
+      "expected_output": "Shows only the dissent register section. Handles the case where no dissent has been recorded gracefully."
+    },
+    {
+      "id": 4,
+      "prompt": "What's the current status of the project? What sprints have we run and what's next?",
+      "expected_output": "Uses shell-injected content to surface live sprint history and backlog. Does not fabricate sprint data. If files are missing, explains how to set up the framework."
+    },
+    {
+      "id": 5,
+      "prompt": "/status decisions",
+      "expected_output": "Shows only the decisions section from research/DECISIONS.md. Handles missing file gracefully."
+    }
+  ]
+}

@@ -1,12 +1,30 @@
 # Changelog
 
-All notable changes to the Project Squad framework are documented here. This file allows projects using the framework to understand what has changed between versions and decide when to update.
+All notable changes to the Tiger Team framework are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/); versions use [Semantic Versioning](https://semver.org/).
 
-The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Versions use [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`.
+---
 
-- **MAJOR** — breaking changes to command behaviour or output format.
-- **MINOR** — new features, templates, or commands that are backwards-compatible.
-- **PATCH** — fixes, clarifications, and documentation improvements.
+## [2.0.0] — 2026-06-06
+
+Renamed **project-squad → tiger-team** and converted from a copy-in command toolkit to a Claude Code plugin (**bs-tiger-team**).
+
+### Changed (breaking)
+
+- **Distribution is now a plugin.** The six commands became eight skills under `skills/` (`init`, `sprint`, `workshop`, `spike`, `import-personas`, `status`, `context`, `review-dissent`). Nothing is copied into host repos any more — personas, process, templates, and site assets travel with the plugin.
+- **`init` merges `seed-project-context` + `init-project-squad`** and now: writes the project context to `research/PROJECT_CONTEXT.md` (legacy `_meta/` still read), detects an existing host decision log and writes `research/DECISIONS.md` in a provenance-only form, generates `research/README.md` lane governance, emits `note:` frontmatter on every living document, registers the lane in the host docs index and CLAUDE.md (offered, not silent), and no longer seeds empty `sprints/`/`workshops/`/`spikes/` directories.
+- **`.squad/` → `team/`** — `project-squad.md` renamed `personas.md`; terminology updated from Project Squad to Tiger Team throughout.
+- **Site assets ship with the plugin** (`assets/site/`) — skills copy them into the host on first use, replacing the "run `npx @by-sixteen/project-squad site`" pre-flight.
+- **npm distribution retired** — `bin/cli.js`, `package.json`, `templates/`, and `DEPLOY.md` moved to `_archive/`.
+
+### Added
+
+- Per-skill evals (`skills/<name>/evals/evals.json`) and an `init` conformance benchmark (8/8 vs the v1 commands' 2/8 on a docs-first host fixture).
+- Decision-graduation rule: where the host keeps its own decision log, team decisions graduate there and the research copy records provenance only.
+
+### Unchanged
+
+- The nine personas, their signature questions, and the mandatory-dissent rule.
+- Output formats: `summary.json` schema, sprint/workshop/spike file templates, the First 20 Lines rule.
 
 ---
 

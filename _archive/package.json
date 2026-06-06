@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bysixteen/project-squad.git"
+    "url": "git+https://github.com/bysixteen/project-squad.git"
   },
   "bin": {
-    "project-squad": "./bin/cli.js"
+    "project-squad": "bin/cli.js"
   },
   "files": [
     "bin",

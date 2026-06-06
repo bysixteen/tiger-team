@@ -1,0 +1,20 @@
+{
+  "skill_name": "workshop",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We need to decide by tomorrow: tabs or a side menu for the dashboard navigation? Leadership call on Friday. Workshop it.",
+      "expected_output": "Confirms the trigger conditions (deadline + leading options); runs compressed map (who/moment/risk), 3-5 rapid persona paragraphs including mandatory Elias Vance, records the decision in past tense, writes workshop.md + valid summary.json, updates living documents."
+    },
+    {
+      "id": 2,
+      "prompt": "Workshop this: how should we approach personalisation across the whole app?",
+      "expected_output": "Recognises an open-ended question that fails the one-sentence-decision test and routes to the sprint skill instead of forcing a workshop."
+    },
+    {
+      "id": 3,
+      "prompt": "Quick decision needed: do we proceed with the third-party calendar integration or build our own? The team leans third-party.",
+      "expected_output": "Runs the workshop; Elias Vance grounds his perspective in named client personas from research/PERSONAS.md; if Elias is overruled the dissent lands in the register with a review trigger."
+    }
+  ]
+}

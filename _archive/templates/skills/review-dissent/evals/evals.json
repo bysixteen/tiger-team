@@ -1,0 +1,30 @@
+{
+  "skill_name": "review-dissent",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/review-dissent",
+      "expected_output": "Reads dissent-register.md and sprint-status.md, then produces a table with columns: Dissent summary | Review trigger | Status (Met / Not Yet) | Recommended action. If no dissent exists, says so and suggests running a sprint."
+    },
+    {
+      "id": 2,
+      "prompt": "Before we start the next sprint, can we check if any of Elias's past challenges need revisiting?",
+      "expected_output": "Should trigger review-dissent. Cross-references dissent entries against sprint history. Correctly identifies which trigger conditions have been met based on completed sprints."
+    },
+    {
+      "id": 3,
+      "prompt": "Elias dissented on the navigation decision 3 sprints ago. His review trigger was 'if usability testing shows confusion'. Has that condition been met?",
+      "expected_output": "Reads dissent register and sprint history. Assesses whether usability testing evidence appears in subsequent sprint records. Gives a clear Met / Not Yet verdict with rationale."
+    },
+    {
+      "id": 4,
+      "prompt": "I want to add a new feature to the dashboard. Can you help me write the code?",
+      "expected_output": "SHOULD NOT trigger review-dissent skill. Pure implementation task. Skill stays quiet."
+    },
+    {
+      "id": 5,
+      "prompt": "We've just finished sprint 5 on checkout improvements. Are there any dissent entries from earlier sprints that might be relevant now?",
+      "expected_output": "Triggers review-dissent. Reviews all open dissent entries, compares against completed sprints (including sprint 5), and surfaces any whose review trigger has been met."
+    }
+  ]
+}

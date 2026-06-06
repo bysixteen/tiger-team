@@ -1,9 +1,9 @@
-# Project Squad — Persona Definitions
+# Tiger Team — Persona Definitions
 
-**Version:** 0.9.0
+**Version:** 2.0.0
 **Status:** Portable Constant — do not modify per-project. These personas travel unchanged.
 
-This file defines the nine Project Squad personas. They are archetypes, not real people. Each brings a distinct lens to every sprint and spike. Their job is to prevent groupthink, surface blind spots, and ensure every decision is examined from multiple angles.
+This file defines the nine Tiger Team personas. They are archetypes, not real people. Each brings a distinct lens to every sprint and spike. Their job is to prevent groupthink, surface blind spots, and ensure every decision is examined from multiple angles.
 
 ---
 
