@@ -1,5 +1,6 @@
 ---
-title: "Decision Guide: Choosing the Right Command"
+title: "Decision Guide: Choosing the Right Skill"
+note: "Decision tree for picking sprint vs workshop vs spike — and when none of them is the right tool."
 type: guide
 status: stable
 ---
@@ -24,7 +25,7 @@ If you skip the process and build the wrong thing, you don't get the time back.
 
 ## Which command should I use?
 
-| | `/create-sprint` | `/create-workshop` | `/create-spike` |
+| | `the sprint skill` | `the workshop skill` | `the spike skill` |
 |---|---|---|---|
 | **Time** | Half-day to 1 day | 2–3 hours | 1–4 hours |
 | **Best for** | Foundational product decisions — you don't know what to build yet | Aligning on a leading option — you need to stress-test it, not discover it | Resolving one specific unknown that is blocking a decision or estimate |
@@ -77,7 +78,7 @@ Each sprint's `synthesis.md` and `summary.json` feed the next one. Sprint 000 (F
 
 ## What you walk away with
 
-### `/create-sprint`
+### `the sprint skill`
 - `brief.md` — the sprint challenge and questions
 - `sketches.md` — all persona perspectives (archived, not handed to builders)
 - `decision.md` — the decision, rationale, rejected alternatives, Elias's dissent
@@ -86,11 +87,11 @@ Each sprint's `synthesis.md` and `summary.json` feed the next one. Sprint 000 (F
 - `synthesis.md` — what changed, what the next sprint should know
 - `summary.json` — machine-readable record read by future sprint pre-flight checks
 
-### `/create-workshop`
+### `the workshop skill`
 - `workshop.md` — decision memo: context, decision, rationale, rejected options, Elias's position, next action
 - `summary.json`
 
-### `/create-spike`
+### `the spike skill`
 - `brief.md` — the specific question, acceptance criteria, and investigation angles
 - `output.md` — answer first, then evidence and recommendation (read only the top half in practice)
 - `summary.json`

@@ -1,0 +1,20 @@
+{
+  "skill_name": "sprint",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Run a design sprint on this challenge: club members can't find their training schedule and keep emailing the secretary. We have a research/ lane set up already.",
+      "expected_output": "Reads team/personas.md and the research/ living documents first; walks Step 0 (input mode, format, persona selection); produces brief.md, sketches.md with every selected persona in voice, decision.md with Elias Vance's dissent recorded, synthesis.md, ideas.md, and a valid summary.json; updates DECISIONS.md and sprint-status.md; never substitutes generic role names."
+    },
+    {
+      "id": 2,
+      "prompt": "Lite sprint: should the onboarding flow ask for payment details up front or after the first session booking?",
+      "expected_output": "Recognises Lite format (Map → Decide only) or suggests the workshop skill since this is a binary stress-test decision; if run as Lite, Elias Vance still appears in Decide and the dissent is recorded; outputs follow the first-20-lines rule."
+    },
+    {
+      "id": 3,
+      "prompt": "Run a sprint — there's a candidate in the backlog about the family-account switching moment.",
+      "expected_output": "Pre-flight reads sprint-backlog.md, surfaces the named candidate for confirmation, scans the dissent register for matching review triggers, and derives the next sprint number from sprint-status.md rather than guessing."
+    }
+  ]
+}

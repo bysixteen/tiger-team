@@ -1,0 +1,45 @@
+{
+  "skill_name": "context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What personas should we use for a sprint focused on the onboarding flow? We need technical depth but also want someone to push back on scope.",
+      "expected_output": "References specific Project Squad persona names (e.g. Marcus Thorne, Kira Sharma, Elias Vance) with their roles. Does not use generic role names like 'Designer' or 'Engineer'."
+    },
+    {
+      "id": 2,
+      "prompt": "What's in our sprint backlog right now? I want to know what we should tackle next.",
+      "expected_output": "Reads and surfaces content from research/sprint-backlog.md. If no backlog exists, says so clearly. Does not fabricate backlog items."
+    },
+    {
+      "id": 3,
+      "prompt": "Quick question — what has Elias Vance said in previous sprints? I want to know what he typically challenges.",
+      "expected_output": "References Elias Vance's role as the mandatory challenger, surfaces any relevant sprint history or dissent entries. Uses his name verbatim."
+    },
+    {
+      "id": 4,
+      "prompt": "We're about to start sprint 4 on the notification redesign. Can you remind me which squad members focus on implementation vs. strategy?",
+      "expected_output": "Provides accurate persona breakdown using exact Project Squad names and roles from project-squad.md. Distinguishes strategic vs. implementation-focused personas correctly."
+    },
+    {
+      "id": 5,
+      "prompt": "Fix the TypeScript error in src/utils/format.ts — the `formatDate` function is returning undefined for null inputs.",
+      "expected_output": "SHOULD NOT trigger squad-context skill. This is a pure coding task with no design sprint context. Skill stays quiet."
+    },
+    {
+      "id": 6,
+      "prompt": "Can you refactor this React component to use hooks instead of a class component?",
+      "expected_output": "SHOULD NOT trigger squad-context skill. Pure front-end refactor task. Skill stays quiet."
+    },
+    {
+      "id": 7,
+      "prompt": "Run our next workshop on whether we should use a modal or a slide-over for the settings panel.",
+      "expected_output": "Should trigger squad-context and reference /create-workshop. May reference persona names and the workshop trigger conditions from CLAUDE.md."
+    },
+    {
+      "id": 8,
+      "prompt": "I'm prepping for a spike next week. The question is: should we build our own date picker or use a library? Who from the squad should weigh in on this?",
+      "expected_output": "References specific persona names relevant to a technical spike (e.g. Marcus Thorne, Dr. Lena Petrova, Kira Sharma). Understands spike context."
+    }
+  ]
+}

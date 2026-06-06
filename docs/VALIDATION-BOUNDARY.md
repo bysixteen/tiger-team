@@ -1,8 +1,13 @@
+---
+note: "Where the framework ends — it answers 'are we building the right thing?'; prototyping and testing are delivery concerns."
+type: guide
+---
+
 # The Validation Boundary
 
-## Where the Project Squad Framework ends
+## Where the Tiger Team framework ends
 
-The Project Squad Framework is a **research and decision-making tool**. It answers the question:
+The Tiger Team Framework is a **research and decision-making tool**. It answers the question:
 
 > "Are we building the right thing?"
 
@@ -30,7 +35,7 @@ That recommended next action is the handoff. It might be:
 - **"Implement [decision] in the next development sprint."**
 - **"Run a usability test against [acceptance criteria]."**
 
-The Project Squad Framework stops at that recommendation. What happens next is a delivery concern.
+The Tiger Team Framework stops at that recommendation. What happens next is a delivery concern.
 
 ---
 
@@ -77,4 +82,4 @@ This keeps validation traceable without coupling it to the sprint process itself
 
 ## References
 
-- Jake Knapp, *Sprint* — Chapter 5 (Friday: Test). Knapp's original sprint ends with user testing on Friday. The Project Squad Framework separates this into a distinct phase because AI-assisted sprints move faster than human ones, and the testing cadence should be decoupled from the decision cadence.
+- Jake Knapp, *Sprint* — Chapter 5 (Friday: Test). Knapp's original sprint ends with user testing on Friday. The Tiger Team Framework separates this into a distinct phase because AI-assisted sprints move faster than human ones, and the testing cadence should be decoupled from the decision cadence.

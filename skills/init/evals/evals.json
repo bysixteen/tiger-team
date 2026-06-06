@@ -1,0 +1,20 @@
+{
+  "skill_name": "init",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Set up the tiger team in this project. Here's the client brief: [a two-page RFP describing a swim-club management platform with three user types].",
+      "expected_output": "Distils the RFP into research/PROJECT_CONTEXT.md (gaps marked TBD, never invented); scaffolds the seven living documents with note: frontmatter, pre-populated from the context; does NOT create empty sprints/workshops/spikes directories; does NOT copy commands or persona files into the host repo; offers a host CLAUDE.md section and shows it before writing."
+    },
+    {
+      "id": 2,
+      "prompt": "Init the squad framework here. This repo already has docs/decisions.md as its decision log per CLAUDE.md.",
+      "expected_output": "Detects the existing host decision log and writes research/DECISIONS.md in the provenance-only form pointing at docs/decisions.md, rather than creating a competing log."
+    },
+    {
+      "id": 3,
+      "prompt": "Run init again — I think some files are missing after a bad merge.",
+      "expected_output": "Detects the existing scaffold, confirms before proceeding, adds only missing files, never overwrites existing living documents, and reports exactly which files were created vs left untouched."
+    }
+  ]
+}
